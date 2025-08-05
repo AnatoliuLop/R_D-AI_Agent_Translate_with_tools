@@ -1,0 +1,16 @@
+# Dockerfile.ui
+FROM python:3.11-slim
+
+WORKDIR /ui
+
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
+ENV API_URL=http://backend:8000
+
+COPY . .
+
+# Вказуємо порт
+EXPOSE 8501
+
+# Запуск Streamlit
+CMD ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
