@@ -11,7 +11,6 @@ GenAI Agent: Перекладач + Граматичний аналізатор
 - **UI**: Streamlit
 - **Docker**: окремі контейнери для API та UI
 
----
 
 ## Кастомні Tools
 
@@ -22,20 +21,25 @@ GenAI Agent: Перекладач + Граматичний аналізатор
 
 Ці tools використовують LLM, але є кастомними, бо вони реалізовані як окремі модулі з власною логікою, prompt-інженерією та інтерфейсом.
 
----
 
 ## Запуск
 
 ### 1. Клонувати репозиторій (bash) 
 git clone https://github.com/ТВОЄ_ІМ_Я/genai-language-agent.git
+
 cd genai-language-agent 
 
 ### 3. Створи файл .env у корені й встав свій OpenRouter API ключ: 
 OPENAI_API_KEY=sk-or-...(свій ключ) 
-OPENAI_API_BASE=https://openrouter.ai/api/v1 
+
+OPENAI_API_BASE=https://openrouter.ai/api/v1
+
 FASTAPI_HOST=0.0.0.0 
+
 FASTAPI_PORT=8000 
+
 STREAMLIT_PORT=8501 
+
 
 ### 3. Запуск у Docker 
 docker compose up --build
