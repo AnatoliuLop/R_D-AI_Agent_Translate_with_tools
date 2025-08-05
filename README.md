@@ -27,7 +27,7 @@ GenAI Agent: Перекладач + Граматичний аналізатор
 ## Запуск
 
 ### 1. Клонувати репозиторій (bash) 
-git clone https://github.com/ТВОЄ_ІМ_Я/genai-language-agent.git 
+git clone https://github.com/ТВОЄ_ІМ_Я/genai-language-agent.git
 cd genai-language-agent 
 
 ### 3. Створи файл .env у корені й встав свій OpenRouter API ключ: 
